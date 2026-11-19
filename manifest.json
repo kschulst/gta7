@@ -1,0 +1,10 @@
+{
+  "name": "GTA 7: Markus City",
+  "short_name": "GTA 7",
+  "start_url": "./",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "background_color": "#111111",
+  "theme_color": "#111111",
+  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#111111">
+<title>GTA 7: Markus City</title>
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon.svg">
+<link rel="manifest" href="manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="game"></canvas>
+<div id="touch"></div>
+
+<div id="hud" class="hidden">
+  <div id="radarWrap"><canvas id="radar" width="300" height="300"></canvas></div>
+  <div id="topright">
+    <div id="money">100 kr</div>
+    <div id="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+  </div>
+  <div id="objective" class="hidden"></div>
+  <div id="timer" class="hidden"></div>
+  <div id="hint" class="hidden"></div>
+  <div id="turboBar" class="hidden"><div id="turboFill"></div></div>
+</div>
+
+<div id="controls" class="hidden">
+  <div id="joy"><div id="knob"></div></div>
+  <button id="bCar" class="btn big"><span>🚗</span><small>INN</small></button>
+  <button id="bTurbo" class="btn"><span>🏃</span><small>LØP</small></button>
+  <button id="bHorn" class="btn"><span>🕺</span><small>DANS</small></button>
+  <button id="bPause" class="btn tiny">⏸</button>
+</div>
+
+<div id="big" class="hidden"><div id="bigTitle"></div><div id="bigSub"></div></div>
+<div id="toast" class="hidden"></div>
+
+<div id="dialog" class="hidden">
+  <div id="dFace"></div>
+  <div id="dBody">
+    <div id="dName"></div>
+    <div id="dText"></div>
+    <div id="dTap">Trykk for å fortsette ▶</div>
+  </div>
+</div>
+
+<div id="menu" class="hidden"><div id="menuPanel"></div></div>
+
+<div id="title">
+  <div id="logo">
+    <div id="logoMain"><span class="g">G</span><span class="t">T</span><span class="a">A</span><span class="seven">7</span></div>
+    <div id="logoSub">MARKUS CITY</div>
+    <div id="logoTag">★ Spesialutgave laget for Markus ★</div>
+  </div>
+  <button id="playBtn">SPILL</button>
+  <button id="newBtn" class="hidden">Nytt spill</button>
+  <div id="titleHelp">
+    <b>Mobil:</b> joystick til venstre, knapper til høyre. Snu mobilen sideveis!<br>
+    <b>PC:</b> piltaster/WASD, E = bil, Shift = turbo/løp, Q = dans, H = tut, Esc = pause
+  </div>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
